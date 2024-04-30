@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://daniel-barker24.w3spaces.com/index.html</loc>
+		<lastmod>2024-03-10</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://daniel-barker24.w3spaces.com/project-browser/project-browser.html</loc>
+		<lastmod>2024-03-19</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://daniel-barker24.w3spaces.com/tools/tools.html</loc>
+		<lastmod>2024-03-10</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://daniel-barker24.w3spaces.com/software.html</loc>
+		<lastmod>2024-03-03</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://daniel-barker24.w3spaces.com/about.html</loc>
+		<lastmod>2024-03-03</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://daniel-barker24.w3spaces.com/contact.html</loc>
+		<lastmod>2024-03-03</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://daniel-barker24.w3spaces.com/maintenance.html</loc>
+		<lastmod>2024-03-03</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.1</priority>
+	</url>
+   <!-- Add more URLs as needed -->
+</urlset>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Maintenance</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css\styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<style>
+
+	</style>
+	
+	<script>
+
+	</script>
+</head>
+
+<body onload="printDate()">
+	<div class="pageContainer">
+	<header>
+		<h1 class="pageTitle">daniel-barker.com</h1>
+	</header>
+	
+<!-- 	<nav id="navBar">
+	  <a class="active" href="#home">Home</a>
+	  <a href="#projects">Projects</a>
+	  <a href="#tools">Tools</a>
+	  <a href="#software">Software</a>
+	  <a href="#about">About</a>
+	  <a href="#contact">Contact</a>
+	</nav> -->
+	
+	<div class="contentContainer">
+		<h2>Sorry...webpage still under construction</h2>
+		
+		<img src="coming-soon.png" alt="ComingSoon">
+		
+	</div>
+
+	
+	<footer>
+		<p>Thank you for visiting my website.</p>
+		<p>&copy; Daniel Barker</p>
+		<p id="lastUpdated"></p>
+	</footer>
+
+	</div>
+	
+	
+	<script>
+	//Get last modified date of HTML file and pritn at bottom of page
+		let lastMod = document.lastModified;
+		lastMod = "Page last updated: " + lastMod;
+		document.getElementById("lastUpdated").innerHTML = lastMod;	//Put the date of last update into the HTML
+	</script>
+	
+	
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ArduGauge</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="..\css\styles.css">
+	<link rel="icon" type="image/x-icon" href="..\favicon.png">
+	
+	<style>
+	/* Style for accordion items */
+	.accordion-item {
+	  border-bottom: 1px solid #ddd;
+	}
+
+	/* Style for accordion titles */
+	.accordion-title {
+	  background-color: #eee;
+	  color: #444;
+	  cursor: pointer;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  transition: 0.4s;
+	}
+	
+	.active, .accordion-title:hover {
+		background-color: #ccc; 
+	}
+
+	/* Style for accordion content (hidden by default) */
+	.accordion-content {
+	  padding: 0 18px;
+	  display: none;
+	  background-color: white;
+	  overflow: hidden;
+}
+
+/* Table styling */
+	
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+
+	tr:nth-child(even) {
+	  background-color: #dddddd; /*Set colour for nth even rows */
+	}
+	
+	td:nth-child(2) {
+		text-align: center; /* Center-align the content in the second column */
+	}
+	
+	</style>
+	
+	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
+	<script src="..\js\scripts.js"></script>
+	
+	<script src="..\js\accordion.js" defer></script> <!'defer' to ensure page has loaded before JS acts on the BODY>
+	
+</head>
+
+<body onload="printDate()">
+	<div class="pageContainer">
+	<header>
+		<img src="..\website-logo.png" alt="Logo">
+		<h1 class="pageTitle">Daniel-Barker.com</h1>		
+	</header>
+	
+	<nav id="navBar">
+		<ul>
+			<li><a href="..\index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+			<li><a href="..\project-browser.html"><i class="fa-solid fa-gears"></i>Projects</a></li>
+			<li><a class="active" href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</a></li>
+			<li><a href="..\software.html"><i class="fa-solid fa-computer"></i>Software</a></li>
+			<li><a href="..\about.html"><i class="fa-solid fa-info"></i>About</a></li>
+			<li><a href="..\contact.html"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+		</ul>
+	</nav>
+	
+	<div class="contentContainer">
+		
+		<div class="accordion-item">
+			<button class="accordion-title"><h2><i class="fa-solid fa-chevron-right"></i>Introduction</h2></button>
+			<div class="accordion-content">
+			
+				<p>In this project I set out to create a customisable Arduino based automotive gauge - ArduGauge. 
+				The hardware is designed around an Atmega328P microcontroller, the same chip found in Arduino UNO's & Nano's. 
+				This allowed me to develop a gauge which is easily programmable whilst maintaining a relatively low cost.
+				The enlcousure is sized to be a direct replacemnt for a standard 52mm automotive gauge.
+				</p>
+				
+				<h3>Key features:</h3>
+				<ul>
+					<li>1.28" LCD</li>
+					<li>4 analog inputs</li>
+					<li>SPI header</li>
+					<li>I2C header</li>
+					<li>Onboard voltage regulator and filtering</li>
+				</ul>
+				
+			</div>	
+		</div>
+		<div class="accordion-item">
+			<button class="accordion-title"><h2><i class="fa-solid fa-chevron-right"></i>Development</h2></button>
+			<div class="accordion-content">
+				<p>Develolment started with an Arduino Uno and a round LCD to become familiarised with the hardware and its limitations. 
+				The limiting factor is the rate at which the Arduino can refresh the display.
+				Along side the electronic development, a housing design was developed to fit into a 52mm gauge holder and employs the same threaded collar retainer as found on more modern VDO gauges.</p>
+			</div>	
+		</div>
+		<div class="accordion-item">
+			<button class="accordion-title"><h2><i class="fa-solid fa-chevron-right"></i>Use Cases</h2></button>
+			<div class="accordion-content">
+				<p>Due to the range of I/O available, and paired with an Arduino CAN-bus adapter, ArduGauge could be used to display just about any data you could think of.
+				Below are some of the use cases i have tested:
+				</p>
+				<h3>Temperature Gauge</h3>
+				<p>As seen in the development section, the most simple of readouts is with the use of an analog sensor, such as a thermisotr. The push button is used to cycle between a digital or analog guage style.</p>
+				<h3>Accelerometer</h3>
+				<p> Connected to an MPU6050 accelerometer/gyroscope via the I2C bus, the ArduGauge can display the longtidudonal and lateral acceleration of the vehicle in which it is mounted.
+				<h3>Clock</h3>
+				<p>A simple clock face.
+			</div>	
+		</div>
+		<div class="accordion-item">
+			<button class="accordion-title"><h2><i class="fa-solid fa-chevron-right"></i>Files & Downloads</h2></button>
+			<div class="accordion-content">
+				<p>3D, code, etc, view or download here.</p>
+		
+				<table>
+					<tr>	<!-- Headings in first table row -->
+						<th>File Name</th>
+						<th>File Type</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><a href="Hello World.docs" target="_blank" rel="noopener noreferrer">HelloWorld</td>
+						<td>.DOCS</td>
+						<td>A word document with some text.</td>
+					</tr>
+					<tr>
+						<td><a href="Hello World.pdf" target="_blank" rel="noopener noreferrer">HelloWorld</td>
+						<td>.PDF</td>
+						<td>A PDF document with some text.</td>
+					</tr>
+				</table>
+				<br> <!-- Adding a space below the table -->
+
+			</div>	
+		</div>
+	</div>
+
+	
+	<footer>
+		<p>Thank you for visiting my website.</p>
+		<p>&copy; Daniel Barker</p>
+		<p id="lastUpdated"></p>
+	</footer>
+
+	</div>
+	
+</body>
+</html>
+

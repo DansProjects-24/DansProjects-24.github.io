@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Software</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css\styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	
+	<style>
+	/* Table styling */
+	
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+
+	tr:nth-child(even) {
+	  background-color: #dddddd; /*Set colour for nth even rows */
+	}
+	
+	td:nth-child(2) {
+		text-align: center; /* Center-align the content in the second column */
+	}
+	
+	/* Styling exclusively to icons within table */
+	td i {
+		color: black; /* Set color*/
+		float: right; /* Align the icon to the right */
+	}
+	
+	</style>
+	
+	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
+	<script src="js\scripts.js"></script>
+	
+</head>
+
+<body onload="printDate()">
+	<div class="pageContainer">
+	<header>
+		<img src="website-logo.png" alt="Logo">
+		<h1 class="pageTitle">Daniel-Barker.com</h1>		
+	</header>
+	
+<nav id="navBar">
+	<ul>
+		<li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+		<li><a href="project-browser.html"><i class="fa-solid fa-gears"></i>Projects</a></li>
+		<li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</a></li>
+		<li><a class="active" href="software.html"><i class="fa-solid fa-computer"></i>Software</a></li>
+		<li><a href="about.html"><i class="fa-solid fa-info"></i>About</a></li>
+		<li><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+	</ul>
+</nav>
+	
+	<div class="contentContainer">
+		<h2>Software</h2>
+		<p>
+		Below, you'll find an overview of the software tools I have experience with, which I utilize for my projects.
+		</p>
+		
+		<!-- Data to be in table format -->
+		<table>
+			<tr>	<!-- Headings in first table row -->
+				<th>Software</th>
+				<th>Category</th>
+				<th>Notes</th>
+			</tr>
+			<tr>
+				<td>Solidworks <a href="https://www.solidworks.com/solution/3dexperience-solidworks-makers"><i class="fa-solid fa-link"></i></a></td>
+				<td>Design</td>
+				<td>I use a Solidworks hobby license for designing parts and assemblies.</td>
+			</tr>
+			<tr>
+				<td>3Dexperience <a href="https://www.3ds.com/3dexperience"><i class="fa-solid fa-link"></i></a></td>
+				<td>Design</td>
+				<td>Used in conjunction with solidworks, 3DX is used to store design data, manage revisions and part lifecycles.</td>
+			</tr>
+			<tr>
+				<td>Autodesk Inventor <a href="https://www.autodesk.co.uk/products/inventor/"><i class="fa-solid fa-link"></i></a></td>
+				<td>Design</td>
+				<td>Used for designing parts and assemblies.</td>
+			</tr>
+			<tr>
+				<td>Cura <a href="https://ultimaker.com/software/ultimaker-cura/"><i class="fa-solid fa-link"></i></a></td>
+				<td>Manufacturing</td>
+				<td>Generates GCode from an STL files for 3D printing.</td>
+			</tr>
+			<tr>
+				<td>Notepad++ <a href="https://notepad-plus-plus.org/"><i class="fa-solid fa-link"></i></a></td>
+				<td>Text Editor</td>
+				<td>I use notepad++ to create & maintain this website.</td>
+			</tr>
+			<tr>
+				<td>DesignSpark PCB  <a href="https://www.rs-online.com/designspark/pcb-software"><i class="fa-solid fa-link"></i></a></td>
+				<td>Design</td>
+				<td>Electrical schematic and PCB design tool</td>
+			</tr>
+			<tr>
+				<td>LaserGRBL   <a href="https://lasergrbl.com/"><i class="fa-solid fa-link"></i></a></td>
+				<td>Manufacturing</td>
+				<td>Used for sending GCODE to my laser engraver.</td>
+			</tr>
+			<tr>
+				<td>FlatCAM   <a href="http://flatcam.org/"><i class="fa-solid fa-link"></i></a></td>
+				<td>Manufacturing</td>
+				<td>Used to generate toolpaths for PCB milling and other flat materials.</td>
+			</tr>
+			<tr>
+				<td>Arduino IDE   <a href="https://www.arduino.cc/en/software"><i class="fa-solid fa-link"></i></a></td>
+				<td>Programming</td>
+				<td>Used for any Arduino based projects and for configuring the firmware for all of my 3D Printers.</td>
+			</tr>
+			<tr>
+				<td>Fritzing   <a href="https://fritzing.org/"><i class="fa-solid fa-link"></i></a></td>
+				<td>Design</td>
+				<td>Used for breadboard layouts. I used this for PCB design before swicthing to DesignSPark PCB.</td>
+			</tr>
+		</table>
+		
+
+
+	</div>
+
+	
+	<footer>
+		<p>Thank you for visiting my website.</p>
+		<p>&copy; Daniel Barker</p>
+		<p id="lastUpdated">[get-last-update]</p>
+	</footer>
+
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Tools</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css\styles.css">
+	<link rel="icon" type="image/x-icon" href="..\favicon.png">
+	
+	<style>
+	/* Styling of the container which holds the image with text*/
+	.img-with-text{
+		background-color: #f0f0f0; /* Gray background color */
+		margin-bottom: 30px; /* Add margin to separate the containers */
+		margin-left: 25px; /* Set left margin */
+		margin-right: 25px; /* Set right margin */
+		overflow: hidden; /* Clear float */
+	}
+	
+	.img-with-text img {
+		float: left; /* Float the image to the left */
+		max-width: 300px; /* Make all image widths the same */
+		margin-right: 10px; /* Add space between image and text */
+	}
+	
+	.img-with-text .text-block {
+		overflow: hidden; /* Clear float */
+	}	
+	
+
+	</style>
+	
+	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
+	<script src="js\scripts.js"></script>
+	
+</head>
+
+<body onload="printDate()">
+	<div class="pageContainer">
+	<header>
+		<img src="website-logo.png" alt="Logo">
+		<h1 class="pageTitle">Daniel-Barker.com</h1>		
+	</header>
+	
+<nav id="navBar">
+	<ul>
+		<li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+		<li><a href="project-browser.html"><i class="fa-solid fa-gears"></i>Projects</a></li>
+		<li><a class="active" href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</a></li>
+		<li><a href="software.html"><i class="fa-solid fa-computer"></i>Software</a></li>
+		<li><a href="about.html"><i class="fa-solid fa-info"></i>About</a></li>
+		<li><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+	</ul>
+</nav>
+	
+	<div class="contentContainer">
+		<h2>Tools</h2>
+		<p>
+		Below, you'll find an overview of the machines/equipment I use for manufacturing and testing.
+		</p>
+		
+		<!-- Data to be in table format -->
+
+		<div class="img-with-text shadow">
+			<img src="tools/velleman-image.jpg" alt="velleman-image.jpg">
+			<div class="text-block">
+				<h2>Velleman K8200+</h2>
+				<p>This started life as a standard Velleman K8200 but has recieved a number of design changes over the years. 
+				Most notably upgrading to a larger bed size and redesign of the gantry. 
+				The original hotend has also been replaced with an E3D V6.
+				<br>
+				This printer is reserved for printing larger, low resoltuion parts as it has the largest build volume and is fitted with a 0.8mm nozzle.
+				</p>
+				<ul>
+					<li>Technology: FDM</li>
+					<li>Build Volume: 300x200x250mm</li>
+					<li>Hot End: E3D V6 Lite</li>
+					<li>Controls: Original K8200 control board reflashed with MARLIN 2.0 Firmware</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="img-with-text shadow">
+			<img src="tools/3dp-mk1-image.jpg" alt="3dp-mk1-image.jpg">
+			<div class="text-block">
+				<h2>3DP MK1</h2>
+				<p>My first self-designed and built 3D printer. Construction is an aluminium extrusion frame with laser cut exterior paneling.</p>
+				<ul>
+					<li>Technology: FDM</li>
+					<li>Build Volume: 200x200x200mm</li>
+					<li>Hot End: E3D V6</li>
+					<li>Controls: OVM Lite with MARLIN 2.0 Firmware</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="img-with-text shadow">
+			<img src="tools/3-in-1-cnc-image.jpg" alt="3-in-1-cnc-image.jpg">
+			<div class="text-block">
+				<h2>3-in-1 CNC</h2>
+				<p>This machine is the result of my dissertation project: Design of a multi-function 3-Axis Machine with modular tool heads for 3D Printing, PCB Milling, and Laser Engraving.
+				</p>
+				<ul>
+					<li>Technology: FDM</li>
+					<li>Build Volume: 200x200x200mm</li>
+					<li>Hot End: E3D V6</li>
+					<li>Laser Head: Neje 40w Diode laser</li>
+					<li>Spindle: RS775 Series DC Motor with ER11 collet chuck</li>
+					<li>Controls: RAMPS 1.4 with MARLIN 2.0 Firmware</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="img-with-text shadow">
+			<img src="tools/pc-image.png" alt="pc-image.png">
+			<div class="text-block">
+				<h2>Workstation</h2>
+				<p>My PC enables smooth operation of design software, particularly for handling large and complex assemblies in Solidworks.
+				</p>
+				<ul>
+					<li>Processor: Intel i5-10600KF</li>
+					<li>Memory (RAM): 16GB DDR4 2400MHz(2 x 8GB)</li>
+					<li>Graphics Card: NVIDIA GEFORCE GT 1030</li>
+					<li>Storage: 256GB SSD, 1TB HDD</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="img-with-text shadow">
+			<img src="coming-soon.png" alt="placeholder.jpg">
+			<div class="text-block">
+				<h2>Test Equipment</h2>
+				<p>I use a range of test equipment to help with testing and troublshooting my electronics projects:</p>
+				<ul>
+					<li>Multimeter</li>
+					<li>Oscilloscope</li>
+					<li>Bench PSU</li>
+					<li>Digital Microscope</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	
+	<footer>
+		<p>Thank you for visiting my website.</p>
+		<p>&copy; Daniel Barker</p>
+		<p id="lastUpdated">[get-last-update]</p>
+	</footer>
+
+	</div>
+	
+</body>
+</html>
