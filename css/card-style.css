@@ -1,0 +1,54 @@
+/*Flex container to hold all the cards*/
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*Styling for the Card*/
+.card  {
+	width: 300px;
+	background-color: #eaeaea;
+	/*border: 1px solid black;*/
+	border-radius: 0px;
+	margin: 20px;
+
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+
+	transition: 0.5s;		/*Transition time when hovering/ un-hovering*/
+
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/*Card title styling (as hyperlink)*/
+.card a{
+	text-decoration: none;
+	text-align:center;
+	color: black;
+}
+
+/*Enhance shadow when hovered*/			
+.card:hover 
+{
+	box-shadow: 0 15px 20px 0 rgba(0,0,0,1);
+}
+
+/*Styling of image within card*/	
+.card img{
+	/*border-top-left-radius: 10px;
+	border-top-right-radius: 10px;*/
+	width: 100%;
+}
+
+/*Fade in the cards from opacity 0 to 1*/
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

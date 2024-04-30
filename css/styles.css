@@ -1,0 +1,116 @@
+/* An overall page container*/
+/*-----------Default styling first. Media query is further down.-----------*/
+body {
+  /* border-style: solid; */
+	background-color:#474e5d;
+}
+
+div.pageContainer{
+	width: 80%;
+	margin: auto;
+	background-color:GhostWhite;
+	border-radius:5px;
+}
+
+/* Container holding the main page content*/
+div.contentContainer{
+	padding:25px;
+	/* border-style:solid; */
+}
+
+header{
+	padding: 5px;
+}	
+
+/* Styling of the logo image within the header tags  */
+header img {
+  float: left;
+  height: 75px;
+}
+
+footer{
+	border-top:solid;
+	border-width: 1px;
+	text-align: center;
+	padding: 5px;
+}
+
+/* styling of the icons used in the navbar */
+i {
+	padding-right:10px;
+}	
+
+/* styling of shadows used for images or text boxes etc */
+.shadow{
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
+
+
+/*-----------Navbar Styling-----------*/
+/*-----------Default styling first. Media query is further down.-----------*/
+#navBar {
+  overflow: hidden;
+  border-bottom:solid;
+  border-width: 1px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color:inherit;
+  z-index: 1000; /* Ensure the navigation bar stays on top */
+}
+  
+ 
+#navBar ul {
+	list-style-type: none; /* Remove default bullet points */
+	padding: 0; /* Remove default padding */
+	margin: 0; /* Remove default margin */
+}
+
+#navBar ul li {
+	display: inline-block; /* Display list items horizontally */
+}
+
+#navBar ul li a {
+	display: block; /* Make links block-level for better clickability */
+	background-color: gray;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	padding: 5px 20px;
+	margin: 5px;
+	border-radius:40px;
+}
+
+/* Add effect on hover */
+#navBar ul li a:hover {
+	background-color: black;
+	color: white;
+}
+
+/* Add effect to active page button */
+#navBar ul li a.active {
+  background-color: black;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width:100%;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+	
+	#navBar ul li {
+	display: block; /* Display list items vertically */
+	}
+	
+	div.pageContainer{
+	width: 100%;		/* Make it full width to maximise visibility on small displays */
+	}
+	
+
+}

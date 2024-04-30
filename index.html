@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css\styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<style>
+	/* Styling of the container which holds the image with text*/
+	.text-block{
+		background-color: #f0f0f0; /* Gray background color */
+		margin: 0 25px 30px; /* Set margins (top, left&right, bottom)*/
+		padding:0px 10px 0px 10px; /* Set padding within container */
+		overflow: hidden; /* Clear float */
+	}
+	
+	.img-container{
+		display: flex;	/* Use flexbox to align images */
+		justify-content: center; /* Horizontally center items */
+		align-items: center; /* Vertically center items */
+		flex-wrap: wrap; /* Allow items to wrap onto new lines */
+	}
+	
+	.img-container img {
+		float: left; /* Float the image to the left */
+		height: 150px; /* Make all image widths the same */
+		margin: 10px; /* Add space between images*/
+	}
+	
+	.popupBanner {
+		display: none; /* Banner is not displayed by default */
+		position: fixed;
+		top: 0; /* Position at the top of the page */
+		left: 0;
+		width: 100%;
+		background-color: red;
+		color: black;
+		text-align: center;
+		padding-right: 0px;
+		z-index: 9999;
+	}
+
+	/* Media query for smaller screens */
+	@media only screen and (max-width: 768px) {
+		.popupBanner {
+			display: block; /* Display the banner as block element */
+		}	
+	}
+	.closeButton {
+		position: absolute;
+		top: 5px; /* Adjust the top spacing of the close button */
+		right: 15px;
+		cursor: pointer;
+		font-size: 50px; /* Adjust the font size to make the button bigger */
+	}
+
+	
+	</style>
+	
+	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
+	<script src="js\scripts.js"></script>
+	
+	<script>
+	function closeBanner() {
+		document.getElementById("popupBanner").style.display = "none";
+	}
+	</script>
+	
+</head>
+
+<body onload="printDate()">
+	<div class="pageContainer">
+	<header>
+		<img src="website-logo.png" alt="Logo">
+		<h1 class="pageTitle">Daniel-Barker.com</h1>		
+	</header>
+	
+	<nav id="navBar">
+		<ul>
+			<li><a class="active" href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+			<li><a href="project-browser.html"><i class="fa-solid fa-gears"></i>Projects</a></li>
+			<li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</a></li>
+			<li><a href="software.html"><i class="fa-solid fa-computer"></i>Software</a></li>
+			<li><a href="about.html"><i class="fa-solid fa-info"></i>About</a></li>
+			<li><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+		</ul>
+	</nav>
+	
+	<div class="contentContainer">
+
+		<div class="text-block shadow">
+			<h2>Welcome to my digital workshop!</h2>
+			<p>
+			I am a mechanical design engineer who graduated from the University of Brighton and is now working in a mechanical design/development role within the ventilation industry.
+			I have always enjoyed tinkering with things to find out how they work, to fix them, and to understand how they are made. 
+			My free time is spent working on a variety of projects which primarily involve CAD, 3D Printing, and Arduino Programming.
+			</p>
+		</div>
+	
+		<div class="text-block shadow">
+			<h2>Projects</h2>
+			<p>Discover my projects in the <a href="project-browser.html">Project Browser </a> section of this website. I will be adding more to this soon.</p>
+			
+			For real-time updates and behind-the-scenes insights into my projects, follow me on Instagram. <br> 
+			Visit my <a href="https://www.instagram.com/life_of_an_engineer__/">Instagram</a> page to keep up to date with my latest projects.
+			</p>
+		
+		</div>
+				
+		<div class="img-container">
+			<img class="shadow" src="index-photos\hotend.jpg" alt="hotend.jpg">	
+			<img class="shadow" src="index-photos\gearbox.jpg" alt="gearbox.jpg">
+			<img class="shadow" src="index-photos\rc-car.jpg" alt="rc car.jpg">
+			<img class="shadow" src="index-photos\servo.jpg" alt="servo.jpg">
+		</div>		
+	</div>
+
+	<div id="popupBanner" class="popupBanner">
+		<span class="closeButton" onclick="closeBanner()">&times;</span>
+		<p>This website has not yet been optimised for small displays. <br>For the best experience, please use a PC.</p>
+	</div>
+
+	
+	<footer>
+		<p>Thank you for visiting my website.</p>
+		<p>&copy; Daniel Barker</p>
+		<p id="lastUpdated">[get-last-update]</p>
+	</footer>
+
+	</div>
+	
+</body>
+</html>
