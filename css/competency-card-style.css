@@ -1,0 +1,38 @@
+/* Flex container to hold all the cards */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin: 0 25px 30px; /* Set margins (top, left&right, bottom) */
+  /* border: 2px solid black; /* Change the width and color as needed */ */
+}
+
+/* Styling for the Card */
+.competency-card  {
+	min-width: 150px; /* Set a minimum width for the card */
+	max-width: calc(25% - 20px); /* Set a maximum width for the card */
+	overflow: hidden; /* Hide any content that overflows the fixed dimensions */
+	background-color: #eaeaea;
+	margin-bottom: 30px; /* Add margin at the bottom of each card */
+}
+
+/*Styling for the text within the Card*/
+.card-content {
+	flex: 1;  /* Allow content to expand to fill space - makes each text box equal size*/
+	padding: 0 10px 0; /* Set padding (top, left&right, bottom)*/
+}
+
+/*Styling of image within card. Images should be 5:4*/	
+.competency-card img{
+	display: block; /* Ensure the image behaves like a block element */
+	width: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Crop the image to cover the entire container */
+}
+
+/* Adjust card width for different screen sizes */
+@media screen and (max-width: 768px) {
+  .competency-card {
+    max-width: calc(50% - 20px); /* Adjust card width for smaller screens */
+  }
+}

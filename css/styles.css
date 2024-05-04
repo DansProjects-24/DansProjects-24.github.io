@@ -1,10 +1,11 @@
-/* An overall page container*/
 /*-----------Default styling first. Media query is further down.-----------*/
+
 body {
   /* border-style: solid; */
 	background-color:#474e5d;
 }
 
+/* An overall page container*/
 div.pageContainer{
 	width: 80%;
 	margin: auto;
@@ -14,7 +15,7 @@ div.pageContainer{
 
 /* Container holding the main page content*/
 div.contentContainer{
-	padding:25px;
+	padding: 25px 25px 0;  /*(Top, Left/Right, Bottom)*/
 	/* border-style:solid; */
 }
 
