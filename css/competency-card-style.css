@@ -10,7 +10,7 @@
 
 /* Styling for the Card */
 .competency-card  {
-	min-width: 150px; /* Set a minimum width for the card */
+	min-width: 250px; /* Set a minimum width for the card */
 	max-width: calc(25% - 20px); /* Set a maximum width for the card */
 	overflow: hidden; /* Hide any content that overflows the fixed dimensions */
 	background-color: #eaeaea;
@@ -32,7 +32,11 @@
 
 /* Adjust card width for different screen sizes */
 @media screen and (max-width: 768px) {
-  .competency-card {
-    max-width: calc(50% - 20px); /* Adjust card width for smaller screens */
-  }
+	.flex-container {
+	justify-content: center; /* Center items horizontally */
+	}
+	
+	.competency-card {
+	max-width: 100%; /* Set card width to 100% of container so there is only one column */
+	}
 }
