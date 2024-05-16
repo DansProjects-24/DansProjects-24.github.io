@@ -104,8 +104,19 @@ i {
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
 	
-	#navBar ul li {
-	display: block; /* Display list items vertically */
+	#navBar ul li a {
+	font-size: 0; /* Hide the text */
+	display: flex; /* Use flexbox for centering the icon */
+	align-items: center; /* Center items vertically */
+	justify-content: center; /* Center items horizontally */
+	}
+
+	#navBar ul li a i {
+	font-size: 25px; /* Ensure icons are visible and properly sized */
+	}
+
+	#navBar ul li a.active {
+	font-size: 15px; /* Show text for active page */
 	}
 	
 	div.pageContainer{
@@ -113,7 +124,7 @@ i {
 	}
 	
 	div.contentContainer{
-	padding: 25px 0px 0;  /*(Top, Left/Right, Bottom). Left/Right padding reduced for imrpoved visibility on small screens*/
-}
+	padding: 25px 5px 0;  /*(Top, Left/Right, Bottom). Left/Right padding reduced for imrpoved visibility on small screens*/
+	}
 	
 }
