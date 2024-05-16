@@ -4,7 +4,7 @@
 	top: 0; /* Position at the top of the page */
 	left: 0;
 	width: 100%;
-	background-color: red;
+	background-color: rgba(255, 0, 0, 0.75); /* Red with 75% transparency */
 	color: black;
 	text-align: center;
 	padding-right: 0px;
