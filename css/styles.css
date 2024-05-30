@@ -1,5 +1,14 @@
-/*-----------Default styling first. Media query is further down.-----------*/
+/*
+This style sheet is used for features used globally:
+1. Page styling
+2. Navbar styling
+3. Breadcrumb styling
 
+X. Media query
+*/
+
+
+/*---------------------------------General page Styling-------------------------------*/
 body {
   /* border-style: solid; */
 	background-color:#474e5d;
@@ -15,7 +24,7 @@ div.pageContainer{
 
 /* Container holding the main page content*/
 div.contentContainer{
-	padding: 25px 25px 0;  /*(Top, Left/Right, Bottom)*/
+	padding: 25px 25px 25px;  /*(Top, Left/Right, Bottom)*/
 	/* border-style:solid; */
 }
 
@@ -47,7 +56,7 @@ i {
 }
 
 
-/*-----------Navbar Styling-----------*/
+/*---------------------------------Navbar Styling-------------------------------*/
 /*-----------Default styling first. Media query is further down.-----------*/
 #navBar {
   overflow: hidden;
@@ -100,6 +109,43 @@ i {
   top: 0;
   width:100%;
 }
+
+/*---------------------------------Breadcrumb Styling (when used)-------------------------------*/
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  margin-Top: 0px; /* Remove the default margin on top. Default bottom margin still needed */
+  list-style: none; 
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/*---------------------------------Media Query-------------------------------*/
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {

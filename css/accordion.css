@@ -1,0 +1,39 @@
+/* Styling for the accordion layout on project pages */
+
+/* Style for accordion item/block */
+.accordion-item {
+	border-bottom: 1px solid #ddd;
+}
+
+/* Style for accordion titles */
+.accordion-title {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Style when hovering over an accordion block*/
+.active, .accordion-title:hover {
+	background-color: #ccc; 
+}
+
+/* Style for content within the accordion item(hidden by default) */
+.accordion-content {
+	padding: 0 18px;
+	background-color: white;
+	overflow: hidden;
+}
+
+/
+.expanded{
+	display: none;
+}
+
+.colapsed{
+	display: block;
+}
