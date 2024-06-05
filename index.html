@@ -37,7 +37,7 @@
 	</style>
 	
 	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
-	<script src="js\scripts.js"></script>
+	<script src="js\scripts.js" defer></script>	<!-- Defer to ensure HTML is loaded -->
 	
 	<script>
 	function closeBanner() {
@@ -47,7 +47,7 @@
 	
 </head>
 
-<body onload="printDate()">
+<body>
 	<div class="pageContainer">
 	<header>
 		<img src="website-logo.png" alt="Logo">
@@ -77,7 +77,7 @@
 			</p>
 		</div>
 	
-	<div class="text-block shadow">
+		<div class="text-block shadow">
 			<h2>Projects</h2>
 			<p>
 				Discover my projects in the <a href="project-browser.html">Project Browser </a> section of this website. I will be adding more to this soon.</p>
@@ -116,14 +116,7 @@
 				<img src="index-photos\pcb-assy-card-img.jpg" alt="pcb-assy-card-img.jpg">
 			</div>
 		</div>	
-
-<!-- 
-		<div class="img-container">
-			<img class="shadow" src="index-photos\hotend.jpg" alt="hotend.jpg">	
-			<img class="shadow" src="index-photos\gearbox.jpg" alt="gearbox.jpg">
-			<img class="shadow" src="index-photos\rc-car.jpg" alt="rc car.jpg">
-			<img class="shadow" src="index-photos\servo.jpg" alt="servo.jpg">
-		</div>	 -->	
+	
 	</div>
 
 	<div id="popupBanner" class="popupBanner">
@@ -131,14 +124,24 @@
 		<p>This website has not yet been optimised for small displays. <br>For the best experience, please use a PC.</p>
 	</div>
 
+	<!-- Return to top when clicked -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i>Top</button>
 	
 	<footer>
+		<a class="right-border" href="index.html">Home</a>
+		<a class="right-border" href="project-browser.html">Projects</a>
+		<a class="right-border" href="contact.html">Contact</a>
+		<a href="site-map.html">Sitemap</a>
+		
 		<p>Thank you for visiting my website.</p>
 		<p>&copy; Daniel Barker</p>
-		<p id="lastUpdated">[get-last-update]</p>
+		<p>Page last updated: 05/06/2024
+		<!-- <p id="lastUpdated">[get-last-update]</p> Discontinued, unsoported method by github -->
 	</footer>
 
 	</div>
+	
+
 	
 </body>
 </html>

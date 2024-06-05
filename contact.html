@@ -24,27 +24,27 @@
 	</style>
 	
 	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
-	<script src="js\scripts.js"></script>
+	<script src="js\scripts.js" defer></script>
 	
 </head>
 
-<body onload="printDate()">
+<body>
 	<div class="pageContainer">
 	<header>
 		<img src="website-logo.png" alt="Logo">
 		<h1 class="pageTitle">Daniel-Barker.com</h1>		
 	</header>
-	
-<nav id="navBar">
-	<ul>
-		<li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-		<li><a href="project-browser.html"><i class="fa-solid fa-gears"></i>Projects</a></li>
-		<li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</a></li>
-		<li><a href="software.html"><i class="fa-solid fa-computer"></i>Software</a></li>
-		<li><a href="about.html"><i class="fa-solid fa-info"></i>About</a></li>
-		<li><a class="active" href="contact.html"><i class="fa-solid fa-address-card"></i>Contact</a></li>
-	</ul>
-</nav>
+		
+	<nav id="navBar">
+		<ul>
+			<li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+			<li><a href="project-browser.html"><i class="fa-solid fa-gears"></i>Projects</a></li>
+			<li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</a></li>
+			<li><a href="software.html"><i class="fa-solid fa-computer"></i>Software</a></li>
+			<li><a href="about.html"><i class="fa-solid fa-info"></i>About</a></li>
+			<li><a class="active" href="contact.html"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+		</ul>
+	</nav>
 	
 	<div class="contentContainer">
 		<h2>Contact</h2>
@@ -56,15 +56,24 @@
 			<a href="mailto:danieljbarker97@gmail.com"> <i class="fa-regular fa-envelope fa-10x"></i></a>
 			<a href="https://www.linkedin.com/in/daniel-barker-423652163"><i class="fa-brands fa-linkedin fa-10x"></i></a>
 			<a href="https://www.instagram.com/life_of_an_engineer__/"><i class="fa-brands fa-instagram fa-10x"></i></a>
-		<div>	
+		</div>	
 
 	</div>
 
 	
+	<!-- Return to top when clicked -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i>Top</button>
+	
 	<footer>
+		<a class="right-border" href="index.html">Home</a>
+		<a class="right-border" href="project-browser.html">Projects</a>
+		<a class="right-border" href="contact.html">Contact</a>
+		<a href="site-map.html">Sitemap</a>
+		
 		<p>Thank you for visiting my website.</p>
 		<p>&copy; Daniel Barker</p>
-		<p id="lastUpdated">[get-last-update]</p>
+		<p>Page last updated: 05/06/2024
+		<!-- <p id="lastUpdated">[get-last-update]</p> Discontinued, unsoported method by github -->
 	</footer>
 
 	</div>
