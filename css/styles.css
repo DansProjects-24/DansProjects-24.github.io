@@ -26,7 +26,8 @@ header img {
 
 /* An overall page container*/
 div.pageContainer{
-	width: 80%;
+	max-width: 1200px; /* Added to limit width on larger screens*/
+/* 	width: 80%; */
 	margin: auto;
 	background-color:GhostWhite;
 	border-radius:5px;
