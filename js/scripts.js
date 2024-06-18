@@ -1,3 +1,5 @@
+//General javascript fucntions which can be called from the HTML page
+
 //Get last modified date of HTML file and print it in the footer
 function printDate(){
 	let lastMod = document.lastModified;
@@ -9,35 +11,34 @@ function printDate(){
 	
 	lastMod = "Page last updated: " + lastMod;
 	document.getElementById("lastUpdated").innerHTML = lastMod;	//Put the date of last update into the HTML
-	
 
+}
 
-	
-	//This is only relevant to the timeline on the 'About' page.
-	//Cant have multiple 'onload' fucntions. Find alternative method? Perhaps keep in here but do  acheck on file name.
+//Function called by the timeline in 'About' page. 
+//Prints current motnh and year to the latest timeline entry
+function TLpresentDay(){
 	var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];	//Create array of months
     var date = new Date();
 	document.getElementById("TLPresentDay").innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();	//Put present month/year in the timeline element.
-	
 }
 
+//JS related to the 'return to top' button on ALL pages
+// Get the button:
+let mybutton = document.getElementById("myBtn");
 
-	// Get the button:
-	let mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	mybutton.style.display = "block";
+  } else {
+	mybutton.style.display = "none";
+  }
+}
 
-	function scrollFunction() {
-	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = "block";
-	  } else {
-		mybutton.style.display = "none";
-	  }
-	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-	  document.body.scrollTop = 0; // For Safari
-	  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-	}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
