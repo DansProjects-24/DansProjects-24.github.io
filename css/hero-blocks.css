@@ -14,7 +14,6 @@
 /* Class applied to the heading block, this is in addition/ovverride of hero-block class */
 .hero-header{
 	height: auto; /* Override height to fit content */
-
 }
 
 .hero-text {
@@ -74,6 +73,11 @@
 
 /* Adjust card width for different screen sizes */
 @media screen and (max-width: 768px) {
+	.hero-block {
+		margin: 10px; /* Reduce margin */
+}
+	
+	
 	/* For the header card, arrange the text above the image*/
 	.hero-block.hero-header {
         flex-direction: column; /* Stack text above image */
@@ -92,6 +96,10 @@
 	}
 	
 	.hero-block h1{
-			font-size: 20px;
+		font-size: 15px;
+	}
+	
+	.hero-text {
+		font-size: 12px;
 	}
 }
