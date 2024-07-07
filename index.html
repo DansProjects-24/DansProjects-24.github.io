@@ -17,19 +17,24 @@
 	
 	<style>
 
-        .instagram-media {
-            max-width: 0px;
-            margin: 0 auto;
-            /* Set the desired size of the embedded post */
-            width: 100%; /* Adjust this value as needed */
-            max-height: 800px; /* Set a maximum height */
-            overflow: hidden; /* Hide any overflow */
-        }
+	.instagram-media {
+		width: 100% !important;
+		max-width: 100%;
+		height: auto !important;
+	}
 
-        .instagram-media iframe {
-            width: 100%;
-            height: 100%;
-        }
+	.instagram-media iframe {
+		width: 100% !important;
+		height: auto !important;
+	}
+		
+		@media only screen and (max-width: 768px) {
+		.instagram-media {
+			width: 100% !important;
+			height: auto !important;
+			transform: scale(1) !important;
+			transform-origin: center center !important;
+		}
 	
 	</style>
 	
