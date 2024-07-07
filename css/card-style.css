@@ -5,21 +5,31 @@
 	justify-content: center;
 }
 
-/*Styling for the Card*/
-.card  {
-	width: 300px;
-	background-color: #eaeaea;
-	/*border: 1px solid black;*/
-	border-radius: 0px;
-	margin: 20px;
-
+/* Styling for the Card */
+.card {
+    flex: 1 1 250px; /* Initial width, adjust as needed */
+    max-width: 300px; /* Maximum width of the card */
+    background-color: #eaeaea;
+    margin: 10px;
+    
 	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+    
+	transition: 0.5s; /* Transition time when hovering/un-hovering */
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
-	transition: 0.5s;		/*Transition time when hovering/ un-hovering*/
+@media (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 20px); /* Two cards per row with margin */
+    }
+}
 
-	animation: fadeInAnimation ease 3s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+
+.card-content{
+	margin: 0px;
+	padding: 0px;
 }
 
 /*Card title styling (as hyperlink)*/
@@ -37,9 +47,9 @@
 
 /*Styling of image within card*/	
 .card img{
-	/*border-top-left-radius: 10px;
-	border-top-right-radius: 10px;*/
-	width: 100%;
+	width: 100%; /* Ensure image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline spacing */
 }
 
 /*Fade in the cards from opacity 0 to 1*/
