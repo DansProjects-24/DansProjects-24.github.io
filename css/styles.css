@@ -94,6 +94,10 @@ i {
 	list-style-type: none; /* Remove default bullet points */
 	padding: 0; /* Remove default padding */
 	margin: 0; /* Remove default margin */
+	display: flex; /* Use flexbox for layout */
+	justify-content: center; /* Center the items horizontally */
+	align-items: center; /* Center the items vertically */
+	flex-wrap: wrap; /* Allow items to wrap onto new rows */
 }
 
 #navBar ul li {
@@ -102,6 +106,9 @@ i {
 
 #navBar ul li a {
 	display: block; /* Make links block-level for better clickability */
+	flex-direction: row; /* Default flex direction (icon next to text) */
+	align-items: center; /* Center the items vertically */
+	justify-content: center; /* Center the items horizontally */
 	background-color: gray;
 	color: white;
 	text-align: center;
@@ -191,14 +198,16 @@ ul.breadcrumb li a:hover {
 @media only screen and (max-width: 768px) {
 	
 	#navBar ul li a {
-	font-size: 0; /* Hide the text */
+	font-size: 15px; /* Hide the text */
 	display: flex; /* Use flexbox for centering the icon */
 	align-items: center; /* Center items vertically */
-	justify-content: center; /* Center items horizontally */
+	
+	flex-direction: column; /* Stack the icon and text vertically */
 	}
 
 	#navBar ul li a i {
-	font-size: 25px; /* Ensure icons are visible and properly sized */
+	font-size: 15px; /* Ensure icons are visible and properly sized */
+	align-items: center; /* Center the icon and text within the button */
 	}
 
 	#navBar ul li a.active {
