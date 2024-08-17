@@ -6,28 +6,65 @@
 	<title>Tools</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css\styles.css">
-	<link rel="icon" type="image/x-icon" href="..\favicon.png">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
 	
 	<style>
 	/* Styling of the container which holds the image with text*/
-	.img-with-text{
+	/* Default styling for wider screens */
+	.img-with-text {
 		background-color: #f0f0f0; /* Gray background color */
 		margin-bottom: 30px; /* Add margin to separate the containers */
 		margin-left: 25px; /* Set left margin */
 		margin-right: 25px; /* Set right margin */
-		overflow: hidden; /* Clear float */
+		display: flex;
+		align-items: flex-start; /* Align items at the start */
 	}
-	
+
 	.img-with-text img {
-		float: left; /* Float the image to the left */
-		max-width: 300px; /* Make all image widths the same */
-		margin-right: 10px; /* Add space between image and text */
+		max-width: 300px; /* Set max width of the image */
+		margin-right: 20px; /* Add space between image and text */
 	}
-	
+
 	.img-with-text .text-block {
-		overflow: hidden; /* Clear float */
-	}	
-	
+		display: flex;
+		flex-direction: column; /* Stack header and text vertically */
+		justify-content: flex-start; /* Align the text block content at the top */
+	}
+
+	.img-with-text h2 {
+		margin: 0; /* Remove default margin */
+		padding-bottom: 10px; /* Add space between header and paragraph */
+	}
+
+	/* Media query for narrower screens */
+@media screen and (max-width: 768px) {
+    .img-with-text {
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center-align the content horizontally */
+        width: 80%; /* Set width as a percentage of the container */
+        margin-left: auto; /* Maintain space on the left side */
+        margin-right: auto; /* Maintain space on the right side */
+    }
+
+    .img-with-text h2 {
+        order: -1; /* Move the header to the top */
+        width: 100%;
+        text-align: center; /* Center the header */
+    }
+
+    .img-with-text img {
+        float: none; /* Remove the float */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add margin below the image */
+        max-width: 100%; /* Ensure the image fits within the container */
+    }
+
+    .img-with-text .text-block {
+        width: 100%; /* Take full width of the container */
+        padding: 15px; /* Add padding around the text block */
+        box-sizing: border-box; /* Ensure padding is included in the element's total width */
+    }
+}
 
 	</style>
 	
@@ -66,11 +103,11 @@
 			<img src="tools/velleman-image.jpg" alt="velleman-image.jpg">
 			<div class="text-block">
 				<h2>Velleman K8200+</h2>
-				<p>This started life as a standard <a href="http://www.velleman.co.uk/contents/en-uk/p576_k8200.html" target="_blank">Velleman K8200</a> but has recieved a number of design changes over the years. 
+				<p>This started life as a standard <a href="http://www.velleman.co.uk/contents/en-uk/p576_k8200.html" target="_blank">Velleman K8200</a> but has received a number of design changes over the years. 
 				Most notably upgrading to a larger bed size and redesign of the gantry. 
 				The original hotend has also been replaced with an E3D V6.
 				<br>
-				This printer is reserved for printing larger, low resoltuion parts as it has the largest build volume and is fitted with a 0.8mm nozzle.
+				This printer is reserved for printing larger, low resolution parts as it has the largest build volume and is fitted with a 0.8mm nozzle.
 				</p>
 				<ul>
 					<li>Technology: FDM</li>
