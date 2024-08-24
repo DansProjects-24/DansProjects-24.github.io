@@ -15,7 +15,7 @@
 	animation-fill-mode: forwards;
 }
 
-/* Class applied to the heading block, this is in addition/ovverride of hero-block class */
+/* Class applied to the heading block, this is in addition/override of hero-block class */
 .hero-header{
 	height: auto; /* Override height to fit content */
 }
@@ -39,7 +39,7 @@
     box-sizing: border-box; /* Include padding and border in width calculation */
     overflow: hidden; /* Crop the image */
     display: flex;
-    justify-content: center; /* Align image to the right */
+    justify-content: center; /* center image in the div */
     height: 100%; /* Make sure it takes the full height of the .hero-block */
 }
 
