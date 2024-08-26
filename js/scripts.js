@@ -14,14 +14,6 @@ function printDate(){
 
 }
 
-//Function called by the timeline in 'About' page. 
-//Prints current motnh and year to the latest timeline entry
-function TLpresentDay(){
-	var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];	//Create array of months
-    var date = new Date();
-	document.getElementById("TLPresentDay").innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();	//Put present month/year in the timeline element.
-}
-
 //JS related to the 'return to top' button on ALL pages
 // Get the button:
 let mybutton = document.getElementById("myBtn");
