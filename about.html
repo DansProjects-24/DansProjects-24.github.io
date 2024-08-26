@@ -16,7 +16,22 @@
 	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
 	<script src="js\scripts.js" defer></script>
 	
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const timelineEntries = document.querySelectorAll('.content');
 
+  timelineEntries.forEach(entry => {
+    entry.addEventListener('click', function () {
+      // Collapse all entries
+      timelineEntries.forEach(e => e.classList.remove('expanded'));
+      
+      // Expand the clicked entry
+      entry.classList.add('expanded');
+    });
+  });
+});
+
+</script>
 
 
 </head>
@@ -60,7 +75,7 @@
 				<div class="content">
 					<h3><i class="fa-solid fa-bug"></i></i>Front End Development - December 2023</h3>
 					<div class="content-wrapper">
-						<p>Completed the <a href="https://www.w3schools.com/">W3 Schools</a> Front End Development course and began creating this website. 
+						<p>Completed the <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a> Front End Development course and began creating this website. 
 						This serves as both a portfolio of my achievements and a way to share my projects with makers and enthusiasts alike</p>
 					</div>
 				</div>
@@ -69,7 +84,10 @@
 				<div class="content">
 					<h3><i class="fa-solid fa-briefcase"></i>Volution Ventilation - September 2022</h3>
 					<div class="content-wrapper">
-						<p>Started working as a Mechanical Design Engineer at Volution Ventilation.</p>
+						<p>Started working as a Mechanical Design Engineer at <a href="https://www.volutiongroupplc.com/" target="_blank">Volution Ventilation</a>.<br>
+						My role primarily consisted of designing industrial air handling and heat recovery products, namely the Sentinel Apex range of MVHR's. <br>
+						I was introduced to Autodsek Inventor CAD software which I used for development of parts and assemblies, mostly sheet metal.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -77,7 +95,8 @@
 				<div class="content">
 					<h3><i class="fa-solid fa-briefcase"></i>Transport for London - June 2022</h3>
 					<div class="content-wrapper">
-						<p>Seconded to TfL as a Pumps and Drainage Engineer.</p>
+						<p>Seconded to <a href="https://tfl.gov.uk/" target="_blank">TfL</a> as a Pumps and Drainage Engineer to provide technical mechanical input into project briefs and scope of works for refurbishment of several surface water pumping stations.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -85,7 +104,10 @@
 				<div class="content">
 					<h3><i class="fa-solid fa-award"></i>IET Engineering Award - December 2021</h3>
 					<div class="content-wrapper">
-						<p>Awarded the IET Manufacturing Engineering Student Award for my efforts during my final year project.</p>
+						<p>Awarded the IET Manufacturing Engineering Student Award for my efforts during my final year project:
+						Design of a Multi-function 3-Axis Machine with Modular Tool Heads for 3D Printing, PCB Milling, and Laser Engraving.<br>
+						See more on my <a href="project-browser.html">Projects</a> page.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -93,7 +115,10 @@
 				<div class="content">
 					<h3><i class="fa-solid fa-briefcase"></i>Capita RE&I - July 2021</h3>
 					<div class="content-wrapper">
-						<p>Started working as a Junior Mechanical Engineer at Capita Real Estate & Infrastructure.</p>
+						<p>Started working as a Junior Mechanical Engineer at Capita Real Estate & Infrastructure. <br>
+						I contributed to mechanical design on both potable and waste water infrastructure projects, 
+						including hydraulic calculations, production of P&IDs, and GA drawings.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -101,9 +126,9 @@
 				<div class="content">
 					<h3><i class="fa-solid fa-graduation-cap"></i>Graduated - July 2021</h3>
 					<div class="content-wrapper">
-						<p>Graduated from the University of Brighton with a first class degree in Mechanical Engineering. <br>
-						<!-- I developed both theoretical knowledge and practical skills in areas such as dynamics, design, 
-						electronics, materials and manufacturing, laying a solid foundation for my future endeavors. -->
+						<p>Graduated from the <a href="https://www.brighton.ac.uk/index.aspx" target="_blank">University of Brighton</a> with a first class degree in Mechanical Engineering. <br>
+						I developed both theoretical knowledge and practical skills in areas such as design, 
+						electronics, materials and manufacturing, laying a solid foundation for my future endeavors.
 						</p>
 					</div>
 				</div>
@@ -112,7 +137,7 @@
 				<div class="content">
 					<h3><i class="fa-solid fa-briefcase"></i>Airbus Defence & Space - July 2019</h3>
 					<div class="content-wrapper">
-						<p>I started a 12-month internship at Airbus Defence & Space where I worked in the mechanical design office (MDO) as part of the CAD Process team. <br>
+						<p>I started a 12-month internship at <a href="https://www.airbus.com/en/products-services/space" target="_blank">Airbus Defence & Space</a> where I worked in the mechanical design office (MDO) as part of the CAD Process team. <br>
 						In this role, the team was dedicated to enhancing the efficiency of the design and validation processes within the MDO and other departments through automation and process improvements.
 						Throughout the experience, I became proficient in utilizing Catia V5 & V6 for various design activities and expanding my knowledge of CAD systems.
 						I delved into the realm of automation by exploring Visual Basic to create macros to improve workflow. I was also introduced to HTML, CSS, and JavaScript.
@@ -124,7 +149,7 @@
 				<div class="content">
 					<h3><i class="fa-solid fa-school"></i>University - 2016</h3>
 					<div class="content-wrapper">
-						<p>I stepped into the world of higher education and began studying mechanical engineering at the University of Brighton.</p>
+						<p>I stepped into the world of higher education and began studying mechanical engineering at the <a href="https://www.brighton.ac.uk/index.aspx" target="_blank">University of Brighton</a>.</p>
 					</div>
 				</div>
 			</div>
