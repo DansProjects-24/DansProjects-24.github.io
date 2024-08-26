@@ -14,12 +14,12 @@
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
+  width: 5px;
   background-color: black;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 /* Container around content */
@@ -116,6 +116,7 @@ h3 {
   opacity: 1;            /* Fully opaque */
 }
 
+
 /* Media queries - Responsive timeline on screens less than 768px wide */
 @media screen and (max-width: 768px) {
   /* Adjust the vertical line position for small screens */
@@ -128,15 +129,15 @@ h3 {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
-    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+	border: medium solid;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent lightgray transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
