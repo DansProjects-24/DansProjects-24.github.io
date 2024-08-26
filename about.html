@@ -16,27 +16,12 @@
 	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
 	<script src="js\scripts.js" defer></script>
 	
-<script>
-	//Prints current month and year to the latest timeline entry
-	function TLpresentDay(){
-	var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];	//Create array of months
-    var date = new Date();
-	
-	// Create the text string with current month and year
-	var text = months[date.getMonth()] + ' ' + date.getFullYear();
 
-	// Get the element where the text should be inserted
-	var textElement = document.getElementById('presentDayText');
-
-	// Set the text content
-	textElement.textContent = text;
-}
-</script>
 
 
 </head>
 
-<body onload="TLpresentDay()">
+<body>
 	<div class="pageContainer">
 	<header>
 		<img src="website-logo.png" alt="Logo">
@@ -163,8 +148,25 @@
 
 	</div>
 	
+	<script>
+		//Prints current month and year to the latest timeline entry
+		function TLpresentDay(){
+		var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];	//Create array of months
+		var date = new Date();
+		
+		// Create the text string with current month and year
+		var text = months[date.getMonth()] + ' ' + date.getFullYear();
 
+		// Get the element where the text should be inserted
+		var textElement = document.getElementById('presentDayText');
+
+		// Set the text content
+		textElement.textContent = text;
+	}
 	
+	// Call the function on page load
+    document.addEventListener('DOMContentLoaded', TLpresentDay);
+	</script>
 	
 </body>
 </html>
