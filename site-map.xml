@@ -4,13 +4,13 @@
 	<!-- Top level pages -->
 	<url>
 		<loc>https://daniel-barker.com/index.html</loc>
-		<lastmod>2024-06-05</lastmod>
+		<lastmod>2024-09-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>https://daniel-barker.com/project-browser.html</loc>
-		<lastmod>2024-06-05</lastmod>
+		<lastmod>2024-09-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
@@ -19,20 +19,27 @@
 		<loc>https://daniel-barker.com/project-browser/macros.html</loc>
 		<lastmod>2024-06-05</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>0.4</priority>
+		<priority>0.6</priority>
+	</url>
+	
+	<url>
+		<loc>https://daniel-barker.com/project-browser/ardugauge.html</loc>
+		<lastmod>2024-09-01</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
 	</url>
 	
 	<url>
 		<loc>https://daniel-barker.com/tools.html</loc>
-		<lastmod>2024-06-05</lastmod>
+		<lastmod>2024-08-17</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://daniel-barker.com/software.html</loc>
 		<lastmod>2024-06-05</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://daniel-barker.com/about.html</loc>
@@ -56,7 +63,7 @@
 	</url>
 	<url>
 		<loc>https://daniel-barker.com/site-map.html</loc>
-		<lastmod>2024-06-05</lastmod>
+		<lastmod>2024-09-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.1</priority>
 	</url>
