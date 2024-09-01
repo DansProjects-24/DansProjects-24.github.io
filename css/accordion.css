@@ -1,8 +1,18 @@
-/* Styling for the accordion layout on project pages */
+/* Styling for the accordion layout on project pages
+Accompanied by accordion.js for expanding and collapsing the accordion sections.
+*/
 
 /* Style for accordion item/block */
 .accordion-item {
-	border-bottom: 1px solid #ddd;
+	
+}
+
+/* Style for content within the accordion item (hidden by default) */
+.accordion-content {
+    max-height: 0; /* Start with 0 height */
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    background-color: white;
 }
 
 /* Style for accordion titles */
@@ -14,7 +24,6 @@
 	border: none;
 	text-align: left;
 	outline: none;
-	transition: 0.4s;
 }
 
 /* Style when hovering over an accordion block*/
@@ -22,18 +31,9 @@
 	background-color: #ccc; 
 }
 
-/* Style for content within the accordion item(hidden by default) */
-.accordion-content {
-	padding: 0 18px;
-	background-color: white;
-	overflow: hidden;
-}
-
-/
-.expanded{
-	display: none;
-}
-
-.colapsed{
-	display: block;
+/* Expanded state for the accordion content */
+.expanded {
+    max-height: 1000px; /* Or a value large enough to fit all content */
+    padding: 0;
+	overflow-y: auto; /* Enable vertical scrolling. Ideally max-height is set sufficiently to not require this*/
 }

@@ -1,0 +1,76 @@
+/*---------------------------------Article styling-------------------------------*/
+/* General styling for any content block, e.g., a project page */
+
+/* Article styling */
+.article {
+    font-family: Arial, sans-serif; /* Set a consistent font */
+    color: #333; /* Text color */
+    padding: 10px;
+    text-align: center; /* Center inline-block elements by default */
+}
+
+/* Image styling within the .article class */
+.article img {
+    max-height: 300px; /* Set maximum height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Display images inline */
+    vertical-align: top; /* Align images to the top */
+	margin-bottom: 5px;
+}
+
+/* Text container styling */
+.article-text {
+    display: block;
+    width: 100%; /* Ensure text takes full width */
+    text-align: left; /* Reset text alignment for text blocks */
+    margin-bottom: 10px; /* Space below text block */
+}
+
+/* Paragraph styling within the .article-text class */
+.article-text p {
+    line-height: 1.6; /* Improve readability */
+    margin-top: 0px; /* Remove default margin above a <p> */
+}
+
+.article h3 {
+    margin: 0px;
+	margin-top: 5px;
+	text-align: left; /* Reset text alignment for text blocks */
+}
+
+.article-text ul {
+    margin-left: 0px;
+	list-style:inside; /* Aligns markers next to text.  */
+}
+
+/* Center class for side-by-side images */
+.article .center {
+    display: inline-block; /* Keep centered images inline */
+    margin: 10px; /* Space between images */
+}
+
+/* Left-aligned image */
+.article .left {
+    float: left; /* Float the image to the left */
+    margin-right: 15px; /* Space to the right of the image */
+}
+
+/* Right-aligned image */
+.article .right {
+    float: right; /* Float the image to the right */
+    margin-left: 15px; /* Space to the left of the image */
+}
+
+/* Ensure floats are contained */
+.article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Applied after aparagraph to maintain formatting */
+.clearfix {
+    clear: both;
+}

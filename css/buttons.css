@@ -1,0 +1,62 @@
+/*
+This style sheet is used for misc buttons accross the site
+
+1. Download button - created for project pages
+2. Pop-up banner and button styling - applied to pages which have not been optimised for small displays
+
+*/
+
+
+/*---------------------------------1. Download button styling-------------------------------*/
+/* Button created for project pages linking to github downloads */
+	.dl-button {
+		display: inline-flex; /* Use inline-flex to align icon and text */
+		align-items: center; /* Center icon and text vertically */
+		padding: 10px 20px; /* Add padding to create button look */
+		font-size: 20px; /* Set font size */
+		color: #fff; /* Set text color */
+		background-color: green; /* Set background color */
+		border: none; /* Remove border */
+		border-radius: 5px; /* Optional: rounded corners */
+		text-decoration: none; /* Remove underline from link */
+		transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+	}
+
+	.dl-button:hover {
+		background-color: #555; /* Change background color on hover */
+	}
+
+	.dl-button i {
+		margin: 0 5px; /* Add space between icons and text */
+	}
+
+/*---------------------------------2. Pop-up banner and button styling-------------------------------*/
+	
+	.popupBanner {
+	display: none; /* Banner is not displayed by default */
+	position: fixed;
+	top: 0; /* Position at the top of the page */
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 0, 0, 0.75); /* Red with 75% transparency */
+	color: black;
+	text-align: center;
+	padding-right: 0px;
+	z-index: 9999;
+}
+
+	/* Media query for smaller screens */
+	@media only screen and (max-width: 768px) {
+		.popupBanner {
+			display: block; /* Display the banner as block element */
+		}	
+	}
+	.closeButton {
+		position: absolute;
+		top: 5px; /* Adjust the top spacing of the close button */
+		right: 15px;
+		cursor: pointer;
+		font-size: 50px; /* Adjust the font size to make the button bigger */
+	}
+	
+/*---------------------------------3. Next styling-------------------------------*/

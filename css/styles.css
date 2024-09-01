@@ -172,6 +172,11 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+
+
+
+/*---------------------------------'Return to top' button-------------------------------*/
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -219,7 +224,7 @@ ul.breadcrumb li a:hover {
 	}
 	
 	div.contentContainer{
-	padding: 25px 5px 0;  /*(Top, Left/Right, Bottom). Left/Right padding reduced for imrpoved visibility on small screens*/
+	padding: 5px 5px 5px;  /*(Top, Left/Right, Bottom). Left/Right padding reduced for imrpoved visibility on small screens*/
 	}
 	
 }
