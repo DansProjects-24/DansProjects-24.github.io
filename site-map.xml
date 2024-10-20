@@ -17,16 +17,16 @@
 	<!-- Second level pages (project pages) -->
 	<url>
 		<loc>https://daniel-barker.com/project-browser/macros.html</loc>
-		<lastmod>2024-06-05</lastmod>
+		<lastmod>2024-10-20</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	
 	<url>
 		<loc>https://daniel-barker.com/project-browser/ardugauge.html</loc>
-		<lastmod>2024-09-01</lastmod>
+		<lastmod>2024-10-20</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>0.6</priority>
+		<priority>0.7</priority>
 	</url>
 	
 	<url>
@@ -65,7 +65,7 @@
 		<loc>https://daniel-barker.com/site-map.html</loc>
 		<lastmod>2024-09-01</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>0.1</priority>
+		<priority>0.8</priority>
 	</url>
 	
 
