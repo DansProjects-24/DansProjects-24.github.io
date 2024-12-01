@@ -20,13 +20,6 @@
     animation-fill-mode: forwards;
 }
 
-@media (max-width: 768px) {
-    .card {
-        flex-basis: calc(50% - 20px); /* Two cards per row with margin */
-    }
-}
-
-
 .card-content{
 	margin: 0px;
 	padding: 0px;
@@ -49,7 +42,15 @@
 .card img{
 	width: 100%; /* Ensure image fills its container */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline spacing */
+    aspect-ratio: 1 / 1; /* Ensure the image stays square */
+    object-fit: cover; /* Crop the image if necessary to fit */
+}
+
+/*Media query for small displays*/
+@media (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 20px); /* Two cards per row with margin */
+    }
 }
 
 /*Fade in the cards from opacity 0 to 1*/
