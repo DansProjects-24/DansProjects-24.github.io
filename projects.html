@@ -2,6 +2,16 @@
 <html lang="en-GB">
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXVV4GJNWT"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-KXVV4GJNWT');
+	</script>
+
 	<meta charset="UTF-8">
 	<title>Projects</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,14 +20,21 @@
 	
 	<link rel="stylesheet" href="css\styles.css">
 	<link rel="stylesheet" href="css\card-style.css">
+	<link rel="stylesheet" href="css\buttons.css">
 	<link rel="icon" type="image/x-icon" href="favicon.png">
+	
 	<style>
-
-		
+		<!-- All styles in dedicated sheets -->
 	</style>
 	
 	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
 	<script src="js\scripts.js" defer></script>
+	
+	<script>
+	function closeBanner() {
+		document.getElementById("popupBanner").style.display = "none";
+	}
+	</script>
 	
 </head>
 
@@ -133,6 +150,12 @@
 			</div>	
 		</div>
 
+		<!-- Banner displayed when page is viewed on small displays-->
+		<div id="popupBanner" class="popupBanner">
+			<span class="closeButton" onclick="closeBanner()">&times;</span>
+			<p>This website has not yet been optimised for small displays. <br>For the best experience, please use a PC.</p>
+		</div>
+		
 		<!-- Return to top when clicked -->
 		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i>Top</button>
 		
