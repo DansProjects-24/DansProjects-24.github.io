@@ -3,6 +3,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	/*border-style: solid;*/
 }
 
 /* Styling for the Card */
@@ -10,6 +11,8 @@
     flex: 1 1 250px; /* Initial width, adjust as needed */
     max-width: 300px; /* Maximum width of the card */
     background-color: #eaeaea;
+	border-radius: 10px;  /* Adjust the value to control the roundness */
+	overflow: hidden;     /* Ensures the content inside the card doesn't spill over the rounded corners */
     margin: 10px;
     
 	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
@@ -20,10 +23,13 @@
     animation-fill-mode: forwards;
 }
 
-.card-content{
+
+/*Card title styling*/
+.card-content h3{
 	margin: 0px;
-	padding: 0px;
-}
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+}	
 
 /*Card title styling (as hyperlink)*/
 .card a{
@@ -49,8 +55,18 @@
 /*Media query for small displays*/
 @media (max-width: 768px) {
     .card {
-        flex-basis: calc(50% - 20px); /* Two cards per row with margin */
+        flex-basis: calc(33% - 10px); /* Three cards per row cards per row with margin */
+		max-width: calc(30%);  /*Force all cards this size. Needed when bottom column has one card*/
+		margin: 5px;	/*Reduce the margins*/
     }
+	
+	
+	/* Adjust card titles for smaller displays */
+	.card-content h3{
+		margin: 0px;
+		padding: 5px;
+		font-size: 12px;
+	}
 }
 
 /*Fade in the cards from opacity 0 to 1*/
