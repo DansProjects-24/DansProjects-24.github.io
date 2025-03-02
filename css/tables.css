@@ -1,0 +1,53 @@
+/*
+This style sheet is used for tables accross the site
+
+1. Default tables - default styling for any tables unless otherwise specified
+2. Downloads Table - styling overrides used on the downloads table.
+
+*/
+
+/*---------------------------------1. Default table styling-------------------------------*/
+/*Default Table styling */
+	
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%; 			/* Set width of table with in its container */
+	margin-left:auto; 	/* Auto margin to center the table */
+	margin-right:auto; 	/* Auto margin to center the table */
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left; /*Align left by default*/
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd; /*Set colour for nth even rows */
+}
+
+/* Styling exclusively to icons within table */
+td i {
+	color: black; /* Set color*/
+	float: right; /* Align the icon to the right */
+}
+
+/* Classes for centering text in a column. Add more as needed. */
+.center-col-1 :is(th, td):nth-child(1) {
+	text-align: center; /* Center-align the content in the FIRST column */
+}
+
+.center-col-2 :is(th, td):nth-child(2) {
+	text-align: center; /* Center-align the content in the SECOND column */
+}
+
+.center-col-3 :is(th, td):nth-child(3) {
+	text-align: center; /* Center-align the content in the THIRD column */
+}
+	
+/*---------------------------------2. Downloads table styling-------------------------------*/
+
+.downloads-table {
+	width: 80%; 			/* Override default width */
+}

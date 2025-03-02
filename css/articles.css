@@ -11,9 +11,8 @@
 
 /* Image styling within the .article class */
 .article img {
-    max-height: 300px; /* Set maximum height */
-    width: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure images are responsive */
+    width: 200px; /* Set default image width. Can be overridden with inline styling */
+	max-width: 50%; /* Set max width to scale image on smaller displays*/
     height: auto; /* Maintain aspect ratio */
     display: inline-block; /* Display images inline */
     vertical-align: top; /* Align images to the top */
@@ -73,4 +72,14 @@
 /* Applied after aparagraph to maintain formatting */
 .clearfix {
     clear: both;
+}
+
+/*Media query for small displays*/
+@media (max-width: 768px) {
+
+	/*Reduce font size for readibility. Apllied to <p> and <li>*/
+	.article-text p, .article-text li  {
+		font-size: 12px; 
+	}
+
 }
