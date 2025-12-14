@@ -1,174 +1,173 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-
 <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXVV4GJNWT"></script>
+	 <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-S0NBHL56VS"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 
-	  gtag('config', 'G-KXVV4GJNWT');
+	  gtag('config', 'G-S0NBHL56VS');
 	</script>
-	
-	<meta charset="UTF-8">
-	<title>Home</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	
-	<meta name="description" content="Explore a collection of my projects on this website, featuring detailed design and development processes. Discover accompanying design files for DIY enthusiasts. 
-									This platform serves as a portfolio of achievements and a hub for sharing projects with makers and enthusiasts.">
-	<meta name="keywords" content="Daniel Barker, Maker, Engineer, Designer, Solidworks Projects, Arduino Projects, 3D Printing Projects, Electronics Projects">
-	<meta name="robots" content="index, follow">
-	 
-	<link rel="stylesheet" href="css\styles.css">
-	<link rel="stylesheet" href="css\hero-blocks.css">
-	<link rel="stylesheet" href="css\buttons.css">
-	<link rel="icon" type="image/x-icon" href="favicon.png">
-	
-	<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO -->
+  <meta name="description" content="Professional dog walking and pet care in Crawley. Fully licensed and insured with over 10 years’ experience keeping pets happy and healthy.">
+  <meta name="keywords" content="Dog walking Crawley, Dog walking Copthorne, Pet care Crawley, Pet sitting, Dog daycare, Pawsitive Barker">
+  <meta name="robots" content="index, follow">
+  
+  <title>Pawsitive Barker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
+  
 
-
-	</style>
-	
-	<script src="https://kit.fontawesome.com/f8179e8326.js" crossorigin="anonymous"></script>
-	<script src="js\scripts.js" defer></script>	<!-- Defer to ensure HTML is loaded -->
-	
-	<script>
-	function closeBanner() {
-		document.getElementById("popupBanner").style.display = "none";
-	}
-	</script>
-	
+  
 </head>
-
 <body>
-	<div class="pageContainer">
 	<header>
-		<img src="website-logo.png" alt="Logo">
-		<h1 class="pageTitle">Daniel-Barker.com</h1>		
+	  <div class="hero-text">
+		<h1>Pawsitive Barker</h1>
+		<p>Pet services in Crawley and surrounding areas 🐕</p>
+	  </div>
 	</header>
 	
-	<nav id="navBar">
+	<nav class="navbar">
 		<ul>
-			<li><a class="active" href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-			<li><a href="projects.html"><i class="fa-solid fa-gears"></i>Projects</a></li>
-			<li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</a></li>
-			<li><a href="software.html"><i class="fa-solid fa-computer"></i>Software</a></li>
-			<li><a href="about.html"><i class="fa-solid fa-info"></i>About</a></li>
-			<li><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#services">Our Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#info">Info</a></li>
+			<li><a href="#gallery">Gallery</a></li>
 		</ul>
 	</nav>
-	
-	<div class="contentContainer" />
 
-		<div class="hero-block hero-header shadow">
-			<div class="hero-text">
-			<h1>Welcome to my digital workshop!</h1>
+	
+	
+	<section class="intro" id="about">
+	  <div class="intro-content">
+		<div class="intro-inner">
+		  <div class="intro-image">
+			<img src="images\me.jpg" alt="Ellie, business owner">
+		  </div>
+		  <div class="intro-text">
+			<h2>About Me</h2>
 			<p>
-			I'm a mechanical design engineer, 3D printing enthusiast, general maker of things and a University of Brighton graduate. 
-			<br>Beyond the confines of my professional responsibilities, my free time is spent working on a variety of projects which primarily involve CAD, 3D Printing, and Arduino's. 
-			<br>On this website, you'll find a collection of my projects, showcasing the design and development process and accompanied by any design files for those interested in making it themselves. 
-			<br>This platform serves as both a portfolio of my achievements and a way to share my projects with makers and enthusiasts alike.
+			  Hi, I’m Ellie — the heart behind <strong>Pawsitive Barker</strong>. 
+			  With over 10 years of experience caring for dogs, cats, and all sorts of furry friends, 
+			  I’m fully licensed, insured, and trained in pet first aid. 
+			  Whether it’s daily walks, overnight stays, or a bit of companionship while you’re at work, 
+			  your pets will be treated like family. 🐶❤️
 			</p>
-			</div>
-			<div class="gradient-right"></div>
-			<div class="hero-image">
-				<img src="index-photos/danuino-hero-img.png" alt="danuino-hero-img.png">
-			</div>
+			<ul class="intro-bullets">
+			  <li>10+ Years Experience</li>
+			  <li>Fully Insured</li>
+			  <li>Licensed</li>
+			  <li>First Aid Trained</li>
+			  <li>K9 Handling Training</li>
+			</ul>
+		  </div>
 		</div>
-		
-		<div class="hero-block shadow">
-			<div class="hero-image">
-				<img src="index-photos/cad-hero-img.jpg" alt="cad-hero-img.jpg">
-			</div>
-			<div class="gradient-left"></div>
-			<div class="hero-text">
-				<h1>3D Design</h1> 
-				<p>As a Certified Solidworks Professional I use my extensive knowledge of the software to create parts and assemblies for my projects.</p>
-			</div>
+	  </div>
+	</section>
+
+	<section class="services" id="services">
+	  <h2>Our Services</h2>
+	  <div class="service-list">
+		<div class="service-item">
+		  <h3><i class="fa-solid fa-paw"></i>Walking</h3>
+		  <p>
+			Daily adventures for your dog to stretch their legs, sniff, and socialise!  
+			Our fun group walks take place in secure local fields — perfect for safe play, exercise, and tail-wagging joy.
+		  </p>
 		</div>
-		
-		<div class="hero-block shadow">
-			<div class="hero-text">
-				<h1>Prototyping</h1> 
-				<p>With the use of 3D Printing, CNC machining, or Laser engraving I can quickly transform a digital design into a prototype.</p>
-			</div>
-			<div class="gradient-right"></div>
-			<div class="hero-image">
-				<img src="index-photos/3dp-hero-img.jpg" alt="3dp-hero-img.jpg">
-			</div>
+		<div class="service-item">
+		  <h3><i class="fa-solid fa-sun"></i>Day Care</h3>
+		  <p>
+			A full day of care, cuddles, and companionship while you’re busy.  
+			Your dog will enjoy walks, playtime, and plenty of rest in a relaxed, home-style environment.
+		  </p>
 		</div>
-		
-		<div class="hero-block shadow">
-			<div class="hero-image">
-				<img src="index-photos/pcb-hero-img.png" alt="pcb-hero-img.png">
-			</div>
-			<div class="gradient-left"></div>
-			<div class="hero-text">
-				<h1>Electronic Design</h1> 
-				<p>Drawing upon my electronics knowledge, I can create electrical schematics and PCB layouts to bring automation to my projects.</p>
-			</div>
+		<div class="service-item">
+		  <h3><i class="fa-solid fa-moon"></i>Overnight Stays</h3>
+		  <p>
+			Going away? We’ll make sure your pet feels right at home.  
+			Overnight stays include walks, meals, and love — keeping your furry friend safe, happy, and comfortable.
+		  </p>
 		</div>
-		
-		<div class="hero-block shadow">
-			<div class="hero-text">
-				<h1>PCB Assembly</h1> 
-				<p>I assemble and test my PCBs in house with attention to detail ensuring even the smallest SMD components are assembled correctly.</p>
-			</div>
-			<div class="gradient-right"></div>
-			<div class="hero-image">
-				<img src="index-photos/pcb-assy-hero-img.jpg" alt="pcb-assy-hero-img.jpg">
-			</div>
+		<div class="service-item">
+		  <h3><i class="fa-solid fa-house"></i>Drop-Ins</h3>
+		  <p>
+			Quick visits for feeding, playtime, or bathroom breaks — ideal for puppies, cats, or dogs who prefer the comfort of home.  
+			Reliable, friendly care when you can’t be there.
+		  </p>
 		</div>
-		
-		<div class="hero-block shadow">
-			<div class="hero-image">
-				<img src="index-photos/3d-scan-hero-img.jpg" alt="3d-scan-hero-img.jpg">
-			</div>
-			<div class="gradient-left"></div>
-			<div class="hero-text">
-				<h1>Reverse Engineering</h1> 
-				<p>Using 3D scanning technology, a digital model can be created from physical component to assist with prototyping or reverse engineering.</p>
-			</div>
-		</div>
+	  </div>
+	</section>
 	
-		<div class="hero-block hero-header shadow">
+	<section class="contact" id="contact">
+	  <h2>Contact Us</h2>
+	  <p>Get in touch or follow us on social media!</p>
 
-			<div style="width:100%;">
-				<!-- LightWidget WIDGET https://lightwidget.com/ -->
-				
-				<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-				<iframe src="https://cdn.lightwidget.com/widgets/d49cca28ca3858f6a98ed1ee2c851253.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-
-			</div>
-			
-		</div>	
+	  <div class="contact-icons">
+		<a href="mailto:pawsitivebarker@gmail.com" class="icon email" aria-label="Email">
+		  <i class="fa-solid fa-envelope"></i>
+		</a>
+		<a href="https://www.facebook.com/p/Pawsitive-Barker-Pet-Services-61555786929892/" target="_blank" class="icon facebook" aria-label="Facebook">
+		  <i class="fa-brands fa-facebook"></i>
+		</a>
+		<!--TRBC if ellie wants her phone number online-->
+<!-- 		<a href="https://wa.me/447000000000" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
+		  <i class="fa-brands fa-whatsapp"></i>
+		</a> -->
+		<a href="https://www.instagram.com/pawsitive_barker/" target="_blank" class="icon instagram" aria-label="Instagram">
+		  <i class="fa-brands fa-instagram"></i>
+		</a>
+	  </div>
+	</section>
 	
-	</div>
+	<section class="info" id="info">
+	  <h2>Further Information</h2>
+	  <p>Here you can find documents with more details about our services, pricing, and policies:</p>
+	  <div class="downloads">
+	  	<a href="documents/information form.pdf" target="_blank">
+		  <i class="fa-solid fa-file"></i> New Starter Form 
+		</a>
+		<a href="documents/contract.pdf" target="_blank">
+		  <i class="fa-solid fa-file"></i> Contract
+		</a>
 
-	<div id="popupBanner" class="popupBanner">
-		<span class="closeButton" onclick="closeBanner()">&times;</span>
-		<p>This website has not yet been optimised for small displays. <br>For the best experience, please use a PC.</p>
-	</div>
-
-	<!-- Return to top when clicked -->
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i>Top</button>
+<!-- 		<a href="docs/test.pdf" target="_blank">
+		  <i class="fa-solid fa-file"></i> Terms & Conditions
+		</a> -->
+		<!-- 		<a href="docs/test.pdf" target="_blank">
+		  <i class="fa-solid fa-file"></i> Price List
+		</a> -->
+				<!-- 		<a href="docs/test.pdf" target="_blank">
+		  <i class="fa-solid fa-file"></i> Price Increase Notice
+		</a> -->
+	</section>
 	
-	<footer>
-		<a class="right-border" href="index.html">Home</a>
-		<a class="right-border" href="projects.html">Projects</a>
-		<a class="right-border" href="contact.html">Contact</a>
-		<a href="site-map.html">Sitemap</a>
-		
-		<p>Thank you for visiting my website.</p>
-		<p>&copy; Daniel Barker</p>
-		<p>Page last updated: 11/12/2024
-		<!-- <p id="lastUpdated">[get-last-update]</p> Discontinued, unsoported method by github -->
-	</footer>
+  <section class="gallery" id="gallery">
+    <h2>Happy Dogs!</h2>
+    <div class="image-grid">
+      <img src="images\dogs1.jpg" alt="Dog 1" />
+      <img src="images\dogs2.jpg" alt="Dog 2" />
+      <img src="images\dogs3.jpg" alt="Dog 3" />
+      <img src="images\dogs4.jpg" alt="Dog 4" />
+	  <img src="images\dogs5.jpg" alt="Dog 5" />
+	  <img src="images\dogs6.jpg" alt="Dog 6" />
+	  <img src="images\dogs7.jpg" alt="Dog 7" />
+	  <img src="images\dogs8.jpg" alt="Dog 8" />
+    </div>
+  </section>
 
-	</div>
-	
-
+  <footer>
+    &copy; 2025 Pawsitive Barker. All rights reserved.
+  </footer>
 </body>
 </html>
