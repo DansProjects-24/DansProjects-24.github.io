@@ -3,12 +3,17 @@ This style sheet is used for features used globally:
 1. Page styling
 2. Navbar styling
 3. Breadcrumb styling
+4.'Return to top' button
+5. Gallery image styling  
 
 X. Media query
 */
 
 
-/*---------------------------------General page Styling-------------------------------*/
+/* ------------------------------ */
+/* General page layout Styling    */
+/* ------------------------------ */
+
 body {
   /* border-style: solid; */
 	background-color:#474e5d;
@@ -76,8 +81,10 @@ i {
 }
 
 
-/*---------------------------------Navbar Styling-------------------------------*/
-/*-----------Default styling first. Media query is further down.-----------*/
+/* ------------------------------ */
+/* Navbar Styling                 */
+/* ------------------------------ */
+
 #navBar {
   overflow: hidden;
   border-bottom:solid;
@@ -137,7 +144,10 @@ i {
   width:100%;
 }
 
-/*---------------------------------Breadcrumb Styling (when used)-------------------------------*/
+
+/* ------------------------------ */
+/* Breadcrumb Styling (when used) */
+/* ------------------------------ */
 
 /* Style the list */
 ul.breadcrumb {
@@ -172,10 +182,9 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-
-
-
-/*---------------------------------'Return to top' button-------------------------------*/
+/* ---------------------------- */
+/* 'Return to top' button       */
+/* ---------------------------- */
 
 #myBtn {
   display: none; /* Hidden by default */
@@ -197,7 +206,31 @@ ul.breadcrumb li a:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-/*---------------------------------Media Query-------------------------------*/
+
+/* ---------------------------- */
+/* Gallery Section              */
+/* ---------------------------- */
+.gallery .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------------------- */
+/* Media queries                */
+/* ---------------------------- */
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
